@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-wrapper {
+  width: 60%;
+  height: 100vh;
+  justify-content: start;
+}
+
+.instagram-phone {
+  width: 50%;
+}
+
+.instagram-phone img {
+  width: 50rem;
+}
+
+.instagram-continue {
+  width: 50%;
+  min-height: 34rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.group {
+  width: 100%;
+  padding: 1.3rem 0;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 6rem;
+}
+
+.instagram-login {
+  padding: 8px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #0095f6;
+}
+
+.instagram-logout {
+  margin-top: 1rem;
+  color: #0095f6;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+.get-the-app {
+  width: 100%;
+  padding: 1.3rem 0;
+  flex-direction: column;
+}
+
+.download {
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.app-download {
+  width: 10rem;
+  height: 3rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('../img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('../img/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #fff;
+  }
+
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-phone {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
